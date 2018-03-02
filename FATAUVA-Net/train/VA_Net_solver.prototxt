@@ -1,0 +1,16 @@
+train_net: "../model/VA_Net_train.prototxt"
+test_net: "../model/VA_Net_test.prototxt"
+test_iter: 100
+test_interval: 10
+base_lr: 0.01
+display: 1
+max_iter: 100
+lr_policy: "inv"
+gamma: 0.0001
+power: 0.75
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "../snaps/core_net"
+solver_mode: CPU
+type: "SGD"
